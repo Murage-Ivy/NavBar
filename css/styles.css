@@ -91,14 +91,23 @@ body {
 }
 
 .nav-links {
-
     margin-top: 1rem;
 }
 
+.nav-logo>a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr-primary-5);
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    line-height: 1;
+    margin-bottom: .5rem;
+
+}
+
 .links {
-    /* height: 0;
+    height: 0;
     overflow: hidden;
-    transition: var(--transition); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,6 +125,8 @@ body {
 
 .links>li:hover {
     transform: scale(1.2);
+    background-color: var(--clr-primary-8);
+    border-radius: 5px;
 
 }
 
@@ -128,10 +139,11 @@ body {
     transition: var(--transition);
 }
 
-.links>li:hover {
-    background-color: var(--clr-primary-8);
-    border-radius: 5px;
+.show-links {
+    height: 10rem;
 }
+
+
 
 .nav-toggle {
     font-size: 1.5rem;
