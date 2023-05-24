@@ -162,3 +162,52 @@ body {
 .nav-logo {
     flex-grow: 1;
 }
+
+@media only screen and (min-width: 1024px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-header {
+        padding: 10px 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+    }
+
+    .nav-bar {
+        width: fit-content;
+        flex-grow: 1;
+    }
+
+    .nav-logo>a {
+        margin-bottom: 0;
+    }
+
+    .links>li:hover {
+        background-color: transparent;
+        border-bottom: 2px solid var(--clr-primary-8);
+        transform: scale(1);
+        border-radius: 0;
+        transition: none;
+    }
+
+    .links {
+        flex-grow: 1;
+        height: auto;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .links>li {
+        padding: 0 1rem;
+        width: auto;
+    }
+
+    .links>li>a {
+        display: block;
+    }
+
+
+}
